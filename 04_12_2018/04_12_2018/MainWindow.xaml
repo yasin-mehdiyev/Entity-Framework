@@ -1,0 +1,30 @@
+﻿<Window x:Class="_04_12_2018.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_04_12_2018"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <ComboBox x:Name="cmbCities" HorizontalAlignment="Left" Margin="60,107,0,0" VerticalAlignment="Top" Width="120"
+            ItemsSource="{Binding Path=City}"
+            DisplayMemberPath="Name"
+            SelectedValuePath="Key"
+            SelectedValue="{Binding Path=City}" SelectionChanged="cmbCities_SelectionChanged"  
+         />
+        <Label Content="Fajr" HorizontalAlignment="Left" Margin="253,148,0,0" VerticalAlignment="Top"/>
+        <Label Content="Dhuhr" HorizontalAlignment="Left" Margin="325,148,0,0" VerticalAlignment="Top"/>
+        <Label Content="Asr" HorizontalAlignment="Left" Margin="475,148,0,0" VerticalAlignment="Top"/>
+        <Label Content="Maghrib" HorizontalAlignment="Left" Margin="397,148,0,0" VerticalAlignment="Top"/>
+        <Label Content="Isha" HorizontalAlignment="Left" Margin="524,148,0,0" VerticalAlignment="Top"/>
+
+        <Label x:Name="lblFajr" HorizontalAlignment="Left" Margin="253,204,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblDhuhr" HorizontalAlignment="Left" Margin="325,204,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblAsr" HorizontalAlignment="Left" Margin="475,204,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblMaghrib" HorizontalAlignment="Left" Margin="397,204,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblIsha" HorizontalAlignment="Left" Margin="524,204,0,0" VerticalAlignment="Top"/>
+        <Label Content="Şəhəri seçin" HorizontalAlignment="Left" Margin="69,72,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.641"/>
+
+    </Grid>
+</Window>
